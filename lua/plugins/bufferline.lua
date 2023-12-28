@@ -10,7 +10,22 @@ return {
 				mode = "buffers",
 
 				-- "slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
-				separator_style = "slant",
+				-- separator_style = "slant",
+
+				offsets = {
+					{
+						filetype = "NvimTree",
+						text = "File Explorer",
+						highlight = "Directory",
+						separator = true, -- use a "true" to enable the default, or set your own character
+					},
+					{
+						filetype = "Symbols",
+						text = "Outline",
+						highlight = "Directory",
+						separator = true,
+					},
+				},
 			},
 		})
 
