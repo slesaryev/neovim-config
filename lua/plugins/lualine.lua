@@ -19,7 +19,7 @@ return {
           { "fileformat" },
           { "filetype" },
         },
-      },     
+      },
     })
   end,
 }

@@ -29,7 +29,7 @@ return {
       mason_tool_installer.setup({
         ensure_installed = {
           "stylua",
-        }
+        },
       })
 
       local opts = { noremap = true, silent = true }
@@ -75,14 +75,14 @@ return {
 
       local capabilities = cmp_nvim_lsp.default_capabilities()
 
-      mason_lspconfig.setup_handlers {
+      mason_lspconfig.setup_handlers({
         function(server_name)
           require("lspconfig")[server_name].setup({
             capabilities = capabilities,
             on_attach = on_attach,
-          });
+          })
         end,
-      }
+      })
 
       lspconfig["lua_ls"].setup({
         capabilities = capabilities,
@@ -102,6 +102,7 @@ return {
         },
       })
 
+      -- HACK: Hardcoded icons
       local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
       for type, icon in pairs(signs) do
         local hl = "DiagnosticSign" .. type
