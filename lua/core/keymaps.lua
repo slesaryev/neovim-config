@@ -9,7 +9,6 @@ local icons = require("core.icons")
 -- generic write, quit, close buffer etc...
 keymap.set("n", "<leader>w", "<cmd>write<CR>", { desc = icons.save .. " Save" })
 keymap.set("n", "<leader>q", "<cmd>confirm quit<CR>", { desc = icons.quit .. " Quit" })
-keymap.set("n", "<leader>bc", "<cmd>confirm bwipeout<CR>bprevious<CR>", { desc = icons.close .. " Close current buffer" })
 
 -- use jj or kk to exit insert mode
 keymap.set("i", "jj", "<ESC>", { desc = "Exit insert mode with jj" })
