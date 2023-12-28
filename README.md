@@ -10,7 +10,7 @@ This project is licensed under the [MIT License](LICENSE). While you are free to
 
 I would like to express my gratitude to the following individuals and projects whose work has significantly contributed to my Neovim configuration:
 
-- [Take a look at the plugins folder](./plugins) for a comprehensive list of included plugins, each providing unique functionality and enhancements to the Neovim experience.
+- Take a look at the plugins folder for a comprehensive list of included plugins, each providing unique functionality and enhancements to the Neovim experience.
 
 Snippets and inspirations were also drawn from various sources, and I appreciate the efforts of those who shared their code and ideas.
 
