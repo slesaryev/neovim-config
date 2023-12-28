@@ -28,5 +28,4 @@ opt.smartcase = true
 -- opt.background = "dark"
 opt.signcolumn = "yes"
 
-
-
+opt.scrolloff = 10
