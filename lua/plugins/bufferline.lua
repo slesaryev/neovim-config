@@ -38,7 +38,7 @@ return {
     vim.keymap.set("n", "L", "<cmd>BufferLineCycleNext<CR>", { desc = icons.chevron_right .. " Next open buffer" })
     vim.keymap.set("n", "<leader>bl", "<cmd>BufferLineCloseLeft<CR>", { desc = icons.arrow_left .. " Close buffers to the left" })
     vim.keymap.set("n", "<leader>br", "<cmd>BufferLineCloseRight<CR>", { desc = icons.arrow_right .. " Close buffers to the right" })
-    vim.keymap.set("n", "<leader>bc", "<cmd>confirm bwipeout<CR><cmd>BufferLineCyclePrev<CR>", { desc = icons.close .. " Close current buffer" })
+    vim.keymap.set("n", "<leader>bc", "<cmd>conf bw<CR>:bp<CR>", { desc = icons.close .. " Close current buffer" })
     vim.keymap.set("n", "<leader>bC", "<cmd>BufferLineCloseOther<CR>", { desc = icons.close .. " Close other buffers" })
   end,
 }
