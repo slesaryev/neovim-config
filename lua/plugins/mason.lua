@@ -52,16 +52,16 @@ return {
         vim.keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
 
         opts.desc = icons.lightning_bolt .. " See available code actions"
-        vim.keymap.set({ "n", "v" }, "<leader>la", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
+        vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
 
         opts.desc = icons.word .. " Smart rename"
-        vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, opts) -- smart rename
+        vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, opts) -- smart rename
 
         opts.desc = icons.bug .. " Show buffer diagnostics"
-        vim.keymap.set("n", "<leader>lD", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
+        vim.keymap.set("n", "<leader>cD", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
 
         opts.desc = icons.bug .. " Show line diagnostics"
-        vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float, opts) -- show diagnostics for line
+        vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, opts) -- show diagnostics for line
 
         opts.desc = icons.prev .. " Go to previous diagnostic"
         vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer

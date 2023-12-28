@@ -4,5 +4,5 @@ return {
   { "christoomey/vim-tmux-navigator" },
   { "inkarkat/vim-ReplaceWithRegister" },
   { "stevearc/dressing.nvim",          event = "VeryLazy" },
-  { "karb94/neoscroll.nvim",           event = { "BufReadPre", "BufNewFile" }, opts = true }
+  { "karb94/neoscroll.nvim",           event = { "BufReadPre", "BufNewFile" }, opts = true },
 }

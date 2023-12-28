@@ -26,6 +26,7 @@ return {
   search = "󰍉",
   split_horizontal = "",
   split_vertical = "",
+  todo = "",
   windows = "󱂬",
   word = "",
 }

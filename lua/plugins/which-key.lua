@@ -18,7 +18,7 @@ return {
         b = { name = icons.files .. " Buffer" },
         f = { name = icons.search .. " Find" },
         g = { name = icons.git .. " Git" },
-        l = { name = icons.code .. " LSP" },
+        c = { name = icons.code .. " Code" },
         o = { name = icons.notes .. " Org mode" },
         u = { name = icons.windows .. " UI" },
       }

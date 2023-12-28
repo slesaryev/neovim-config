@@ -24,7 +24,7 @@ return {
       end,
     })
 
-    vim.keymap.set("n", "<leader>ll", function()
+    vim.keymap.set("n", "<leader>cl", function()
       lint.try_lint()
     end, { desc = icons.bug .. " Run linter" })
   end,
