@@ -7,7 +7,7 @@ return {
 
     require("bufferline").setup({
       highlights = {
-        fill = { bg = "NONE", fg = "#ff0000" },
+        fill = { bg = "NONE" },
       },
       options = {
         mode = "buffers",
