@@ -1,5 +1,7 @@
 # My Neovim Configuration
 
+![Neovim Screenshot](https://github.com/slesaryev/neovim-config/raw/main/screenshots/screenshot.jpg)
+
 Welcome to my Neovim configuration! This setup is a continuous work in progress, aimed at optimizing my daily workflow. While it's already in active use, I'm making frequent changes to enhance and refine the setup.
 
 ## License
