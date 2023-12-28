@@ -1,9 +1,10 @@
-local icons = require("core.icons");
+local icons = require("core.icons")
 return {
   "nvim-tree/nvim-tree.lua",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   keys = {
     { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = icons.file_tree .. " Explorer" },
+    { "<leader>fe", "<cmd>NvimTreeFindFileToggle<cr>", desc = icons.file_tree .. " Find file in Explorer" },
   },
   config = function()
     -- Recommended by the documentation (:h nvim-tree-quickstart-setup)
