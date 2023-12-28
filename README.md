@@ -21,6 +21,8 @@ rm -rf ~/.local/share/nvim
 rm -rf ~/.local/state/nvim
 ```
 
+Finally clone the repository into your neovim config directory:
+
 ```
 git clone --depth 1 https://github.com/slesaryev/neovim-config ~/.config/nvim
 nvim
