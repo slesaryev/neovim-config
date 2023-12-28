@@ -5,6 +5,7 @@ return {
     "JoosepAlviste/nvim-ts-context-commentstring",
   },
   config = function()
+    -- TODO: rethink keybindings
     local comment = require("Comment")
     local ts_context_commentstring = require("ts_context_commentstring.integrations.comment_nvim")
 
