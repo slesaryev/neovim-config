@@ -1,5 +1,7 @@
 require("core")
 
+local icons = require("core.icons")
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -27,3 +29,6 @@ require("lazy").setup({
     notify = false,
   },
 })
+
+vim.keymap.set("n", "<leader>up", "<cmd>Lazy<CR>", { desc = icons.puzzle .. " Plugin management" })
+vim.keymap.set("n", "<leader>uP", "<cmd>Lazy sync<CR>", { desc = icons.puzzle_check .. " Plugins update" })
