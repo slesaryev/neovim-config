@@ -4,7 +4,7 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   keys = {
     { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = icons.file_tree .. " Explorer" },
-    { "<leader>fe", "<cmd>NvimTreeFindFileToggle<cr>", desc = icons.file_tree .. " Find file in Explorer" },
+    { "<leader>fe", "<cmd>NvimTreeFindFile<cr>", desc = icons.file_tree .. " Find file in Explorer" },
   },
   config = function()
     -- Recommended by the documentation (:h nvim-tree-quickstart-setup)
