@@ -10,9 +10,9 @@ local icons = require("core.icons")
 keymap.set("n", "<leader>w", "<cmd>write<CR>", { desc = icons.save .. " Save" })
 keymap.set("n", "<leader>q", "<cmd>confirm quit<CR>", { desc = icons.quit .. " Quit" })
 
--- use jj or kk to exit insert mode
-keymap.set("i", "jj", "<ESC>", { desc = "Exit insert mode with jj" })
-keymap.set("i", "kk", "<ESC>", { desc = "Exit insert mode with kk" })
+-- use jj or kk to exit insert mode (disabling for now, somehow uncomfortable)
+-- keymap.set("i", "jj", "<ESC>", { desc = "Exit insert mode with jj" })
+-- keymap.set("i", "kk", "<ESC>", { desc = "Exit insert mode with kk" })
 
 -- split window
 keymap.set("n", "|", "<C-w>v", { desc = icons.split_horizontal .. " Split window vertically" })
