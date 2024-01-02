@@ -10,6 +10,7 @@ return {
   close = "󰅘",
   code = "",
   comment_question = "󰆆",
+  file = "",
   file_tree = "󰙅",
   files = "",
   git = "",
