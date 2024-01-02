@@ -5,15 +5,15 @@ return {
   build = ":Neorg sync-parsers",
   dependencies = { "nvim-lua/plenary.nvim" },
   keys = {
-    { "<leader>oo", "<cmd>Neorg<cr>", desc = icons.menu .. " Open neorg menu" },
+    { "<leader>nn", "<cmd>Neorg<cr>", desc = icons.menu .. " Open neorg menu" },
   },
   config = function()
-    require("neorg").setup {
+    require("neorg").setup({
       load = {
-        ["core.defaults"] = {},  -- Loads default behaviour
+        ["core.defaults"] = {}, -- Loads default behaviour
         ["core.concealer"] = {}, -- Adds pretty icons to your documents
         ["core.completion"] = { config = { name = "[Neorg]", engine = "nvim-cmp" } },
-        ["core.dirman"] = {      -- Manages Neorg workspaces
+        ["core.dirman"] = { -- Manages Neorg workspaces
           config = {
             workspaces = {
               default = "~/notes",
@@ -21,6 +21,9 @@ return {
           },
         },
       },
-    }
+    })
+
+    -- not sure if that's the desired way to preselect a workspace as "default"
+    vim.cmd("Neorg workspace default")
   end,
 }
