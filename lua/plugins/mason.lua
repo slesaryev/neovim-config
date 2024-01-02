@@ -57,8 +57,8 @@ return {
         opts.desc = icons.word .. " Smart rename"
         vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, opts) -- smart rename
 
-        opts.desc = icons.bug .. " Show buffer diagnostics"
-        vim.keymap.set("n", "<leader>cD", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
+        -- opts.desc = icons.bug .. " Show buffer diagnostics"
+        -- vim.keymap.set("n", "<leader>cD", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
 
         opts.desc = icons.bug .. " Show line diagnostics"
         vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, opts) -- show diagnostics for line
@@ -102,11 +102,16 @@ return {
         },
       })
 
-      -- HACK: Hardcoded icons
-      local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+      local signs = {
+        Error = icons.error,
+        Hint = icons.light_bulb,
+        Info = icons.info,
+        Warn = icons.warning,
+      }
+
       for type, icon in pairs(signs) do
         local hl = "DiagnosticSign" .. type
-        vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+        vim.fn.sign_define(hl, { text = icon .. " ", texthl = hl, numhl = "" })
       end
     end,
   },
