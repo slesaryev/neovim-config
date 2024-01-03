@@ -27,6 +27,7 @@ return {
   puzzle = "󰐱",
   puzzle_check = "󱐦",
   quit = "󰗼",
+  pin = "",
   reference = "",
   save = "",
   search = "󰍉",

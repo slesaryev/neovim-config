@@ -40,5 +40,6 @@ return {
     vim.keymap.set("n", "<leader>br", "<cmd>BufferLineCloseRight<CR>", { desc = icons.arrow_right .. " Close buffers to the right" })
     vim.keymap.set("n", "<leader>bc", "<cmd>conf bw<CR>:bp<CR>", { silent = true, desc = icons.close .. " Close current buffer" })
     vim.keymap.set("n", "<leader>bC", "<cmd>BufferLineCloseOther<CR>", { desc = icons.close .. " Close other buffers" })
+    vim.keymap.set("n", "<leader>bp", "<cmd>BufferLineTogglePin<CR>", { desc = icons.pin .. " Pin buffer" })
   end,
 }
