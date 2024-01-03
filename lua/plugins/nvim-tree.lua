@@ -3,8 +3,7 @@ return {
   "nvim-tree/nvim-tree.lua",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   keys = {
-    { "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = icons.file_tree .. " Explorer" },
-    { "<leader>fe", "<cmd>NvimTreeFindFile<cr>", desc = icons.file_tree .. " Find file in Explorer" },
+    { "<leader>e", "<cmd>NvimTreeFindFileToggle<cr>", desc = icons.file_tree .. " Explorer" },
   },
   config = function()
     -- Recommended by the documentation (:h nvim-tree-quickstart-setup)
@@ -38,6 +37,9 @@ return {
       },
       git = {
         ignore = false,
+      },
+      update_focused_file = {
+        enable = true,
       },
     })
   end,
