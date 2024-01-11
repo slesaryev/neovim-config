@@ -1,6 +1,7 @@
 local opt = vim.opt
 
 -- general
+opt.mouse = "a"
 opt.termguicolors = true
 opt.clipboard:append("unnamedplus")
 opt.backspace = "indent,eol,start"
