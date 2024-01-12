@@ -4,6 +4,7 @@ return {
   "nvim-neorg/neorg",
   build = ":Neorg sync-parsers",
   dependencies = { "nvim-lua/plenary.nvim" },
+  event = { "BufReadPre *.norg" },
   keys = {
     { "<leader>nn", "<cmd>Neorg<cr>", desc = icons.menu .. " Open neorg menu" },
   },
