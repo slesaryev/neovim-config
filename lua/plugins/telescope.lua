@@ -34,5 +34,6 @@ return {
     vim.keymap.set("n", "<leader>fw", "<cmd>Telescope live_grep<cr>", { desc = icons.word .. " Find words" })
     vim.keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = icons.word .. " Find word under cursor" })
     vim.keymap.set("n", "<leader>ct", "<cmd>Telescope filetypes<cr>", { desc = icons.file .. " Set file type" })
+    vim.keymap.set("n", "<leader>bf", "<cmd>Telescope buffers<cr>", { desc = icons.search .. " Find open buffers" })
   end,
 }
