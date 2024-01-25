@@ -24,7 +24,7 @@ return {
             separator = true, -- use a "true" to enable the default, or set your own character
           },
           {
-            filetype = "Outline",
+            filetype = "sagaoutline",
             text = icons.code .. " Symbols",
             text_align = "left",
             highlight = "Directory",
