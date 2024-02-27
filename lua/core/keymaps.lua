@@ -7,7 +7,7 @@ local keymap = vim.keymap
 local icons = require("core.icons")
 
 -- generic write, quit, close buffer etc...
-keymap.set("n", "<leader>w", "<cmd>write<CR>", { desc = icons.save .. " Save" })
+-- keymap.set("n", "<leader>w", "<cmd>write<CR>", { desc = icons.save .. " Save" })
 keymap.set("n", "<leader>q", "<cmd>confirm quit<CR>", { desc = icons.quit .. " Quit" })
 
 -- use jj or kk to exit insert mode (disabling for now, somehow uncomfortable)
@@ -21,7 +21,8 @@ keymap.set("n", "\\", "<C-w>s", { desc = icons.split_vertical .. " Split window 
 -- move line up down
 keymap.set("n", "<M-j>", ":m+1<CR>", { desc = icons.arrow_down .. " Move line down", silent = true, noremap = true })
 keymap.set("n", "<M-k>", ":m-2<CR>", { desc = icons.arrow_up .. " Move line up", silent = true, noremap = true })
-keymap.set("v", "<M-j>", ":m '>+1<CR>gv=gv", { desc = icons.arrow_down .. " Move lines down", silent = true, noremap = true })
+keymap.set("v", "<M-j>", ":m '>+1<CR>gv=gv",
+  { desc = icons.arrow_down .. " Move lines down", silent = true, noremap = true })
 keymap.set("v", "<M-k>", ":m '<-2<CR>gv=gv", { desc = icons.arrow_up .. " Move lines up", silent = true, noremap = true })
 
 -- window navigation (commented out, since tmux navigator has the shortcuts already)
