@@ -4,9 +4,22 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    priority = 1000,
+    -- priority = 1000,
+    -- config = function()
+    --   vim.cmd.colorscheme "catppuccin"
+    -- end,
+  },
+
+  {
+    "projekt0n/github-nvim-theme",
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
-      vim.cmd.colorscheme "catppuccin"
+      require("github-theme").setup({
+        -- ...
+      })
+
+      vim.cmd("colorscheme github_light")
     end,
   },
 
@@ -19,9 +32,9 @@ return {
     },
     opts = {
       extra_groups = {
-        "NormalFloat",   -- plugins which have float panel such as Lazy, Mason, LspInfo
-        "NvimTreeNormal" -- NvimTree
+        "NormalFloat", -- plugins which have float panel such as Lazy, Mason, LspInfo
+        "NvimTreeNormal", -- NvimTree
       },
-    }
-  }
+    },
+  },
 }
