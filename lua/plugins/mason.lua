@@ -102,6 +102,29 @@ return {
         },
       })
 
+      lspconfig["phpactor"].setup({
+        root_dir = function()
+          local cwd = vim.loop.cwd()
+
+          -- Check for common markers
+          local markers = { "package.json", ".git", "composer.json", "pyproject.toml" }
+          for _, marker in ipairs(markers) do
+            local root = vim.fn.finddir(marker, cwd .. ";")
+            if root ~= "" then
+              return root
+            end
+          end
+
+          -- Fallback to CWD
+          return cwd
+        end,
+        on_attach = on_attach,
+        init_options = {
+          ["language_server_phpstan.enabled"] = false,
+          ["language_server_psalm.enabled"] = false,
+        },
+      })
+
       local signs = {
         Error = icons.error,
         Hint = icons.light_bulb,
