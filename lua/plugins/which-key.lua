@@ -11,7 +11,7 @@ return {
     wk.setup({
       icons = {
         group = "",
-      }
+      },
     })
     wk.register({
       ["<leader>"] = {
@@ -19,9 +19,9 @@ return {
         f = { name = icons.search .. " Find" },
         g = { name = icons.git .. " Git" },
         c = { name = icons.code .. " Code" },
-        o = { name = icons.notes .. " Org mode" },
+        n = { name = icons.notes .. " Notes" },
         u = { name = icons.windows .. " UI" },
-      }
+      },
     })
   end,
 }

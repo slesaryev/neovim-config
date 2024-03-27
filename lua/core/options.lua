@@ -30,3 +30,5 @@ opt.smartcase = true
 opt.signcolumn = "yes"
 
 opt.scrolloff = 10
+
+opt.conceallevel = 2
