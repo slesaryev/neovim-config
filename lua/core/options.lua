@@ -33,5 +33,5 @@ opt.scrolloff = 10
 
 opt.conceallevel = 2
 
-opt.listchars = "space:·,tab:\\"
+opt.listchars = "space:·,tab: ,trail:·"
 opt.list = true
