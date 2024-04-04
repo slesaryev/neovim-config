@@ -27,5 +27,23 @@ return {
       date_format = "%Y-%m-%d-%a",
       time_format = "%H:%M",
     },
+    daily_notes = {
+      folder = "dailies",
+      date_format = "%Y-%m-%d",
+      alias_format = "%B %-d, %Y",
+      template = "daily.md",
+    },
+    -- note_id_func = function(title)
+    --   if title ~= nil then
+    --     return title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
+    --   end
+    --
+    --   local random_letters = ""
+    --   for _ = 1, 4 do
+    --     random_letters = random_letters .. string.char(math.random(65, 90))
+    --   end
+    --
+    --   return tostring(os.time()) .. "-" .. random_letters
+    -- end,
   },
 }
