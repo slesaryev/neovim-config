@@ -32,3 +32,6 @@ opt.signcolumn = "yes"
 opt.scrolloff = 10
 
 opt.conceallevel = 2
+
+opt.listchars = "space:·,tab:\\"
+opt.list = true

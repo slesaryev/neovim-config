@@ -13,13 +13,19 @@ return {
     { "<leader>nd", "<cmd>ObsidianDailies<CR>", desc = icons.calendar .. " Dailies" },
     { "<leader>nr", "<cmd>ObsidianRename<CR>", desc = icons.edit .. " Rename" },
     { "<leader>nf", "<cmd>ObsidianSearch<CR>", desc = icons.search .. " Search" },
+    { "<leader>nt", "<cmd>ObsidianTags<CR>", desc = icons.tag .. " Tags" },
   },
   opts = {
     workspaces = {
       {
-        name = "default",
-        path = "~/ObsidianVault/",
+        name = "notes",
+        path = "~/notes/",
       },
+    },
+    templates = {
+      subdir = ".templates",
+      date_format = "%Y-%m-%d-%a",
+      time_format = "%H:%M",
     },
   },
 }

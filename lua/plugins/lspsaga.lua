@@ -47,5 +47,11 @@ return {
 
     opts.desc = icons.file_tree .. " Symbols outline"
     keymap.set("n", "<leader>cS", "<cmd>Lspsaga outline<CR>", opts) -- show  diagnostics for file
+
+    opts.desc = icons.search .. " Peek definition"
+    keymap.set("n", "<leader>cp", "<cmd>Lspsaga peek_definition<CR>", opts) -- show  diagnostics for file
+
+    opts.desc = icons.search .. " Peek type definition"
+    keymap.set("n", "<leader>cP", "<cmd>Lspsaga peek_type_definition<CR>", opts) -- show  diagnostics for file
   end,
 }

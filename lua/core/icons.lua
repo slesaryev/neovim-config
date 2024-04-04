@@ -38,6 +38,7 @@ return {
   split_horizontal = "",
   split_vertical = "",
   todo = "",
+  tag = "",
   windows = "󱂬",
   warning = "",
   word = "",

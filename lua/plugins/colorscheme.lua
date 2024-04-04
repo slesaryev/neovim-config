@@ -2,27 +2,12 @@ local icons = require("core.icons")
 
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    -- priority = 1000,
-    -- config = function()
-    --   vim.cmd.colorscheme "catppuccin"
-    -- end,
-  },
-
-  {
-    "projekt0n/github-nvim-theme",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
+    "olimorris/onedarkpro.nvim",
+    priority = 1000,
     config = function()
-      require("github-theme").setup({
-        -- ...
-      })
-
-      vim.cmd("colorscheme github_light")
+      vim.cmd("colorscheme onelight")
     end,
   },
-
   -- making nvim transparent, remove if you don't like it
   {
     "xiyaowong/transparent.nvim",
